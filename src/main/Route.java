@@ -1,8 +1,10 @@
+package main;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class Route {
-    private Map<Locality, Map<Locality, Integer>> graph;
+    private final Map<Locality, Map<Locality, Integer>> graph;
 
     public Route() {
         graph = new HashMap<>();

@@ -1,3 +1,5 @@
+package main;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -35,7 +37,7 @@ public class MainSwing extends JFrame {
         // Painel Superior - Cadastro de Localidades
         JPanel topPanel = new JPanel(new BorderLayout());
         locationInput = new JTextField(10);
-        JButton addLocationButton = new JButton("Adicionar Locality");
+        JButton addLocationButton = new JButton("Adicionar main.Locality");
         addLocationButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -43,7 +45,7 @@ public class MainSwing extends JFrame {
             }
         });
         JPanel locationPanel = new JPanel();
-        locationPanel.add(new JLabel("Locality: "));
+        locationPanel.add(new JLabel("main.Locality: "));
         locationPanel.add(locationInput);
         locationPanel.add(addLocationButton);
         topPanel.add(locationPanel, BorderLayout.NORTH);

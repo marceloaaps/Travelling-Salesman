@@ -1,5 +1,7 @@
+package main;
+
 public class Locality {
-    private String name;
+    private final String name;
 
     public Locality(String name) {
         this.name = name;
